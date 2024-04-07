@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var coupon: UIButton!
     
+    @IBOutlet weak var main: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,9 +39,10 @@ class ViewController: UIViewController {
         tabRecepit.image = UIImage(systemName: "list.clipboard")
         tabMy.title = "My배민"
         tabMy.image = UIImage(systemName: "person.2.circle")
-        coupon.layer.borderColor = CGColor(red: 0.3, green: 0.2, blue: 0.1, alpha: 1)
-        coupon.tintColor = .black
-        
+//        coupon.layer.borderColor = CGColor(red: 0.3, green: 0.2, blue: 0.1, alpha: 1)
+        //coupon.tintColor = .black
+        main.image = UIImage(named: "배민메인")
+        main.contentMode = UIView.ContentMode.scaleAspectFit
     }
 
 

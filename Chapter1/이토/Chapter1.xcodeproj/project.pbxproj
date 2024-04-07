@@ -16,6 +16,7 @@
 		A1D76B082BBEFA430005A30D /* Chapter1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D76B072BBEFA430005A30D /* Chapter1Tests.swift */; };
 		A1D76B122BBEFA430005A30D /* Chapter1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D76B112BBEFA430005A30D /* Chapter1UITests.swift */; };
 		A1D76B142BBEFA430005A30D /* Chapter1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D76B132BBEFA430005A30D /* Chapter1UITestsLaunchTests.swift */; };
+		A1F31A182BC3016B0038053F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F31A172BC3016B0038053F /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A1D76B0D2BBEFA430005A30D /* Chapter1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chapter1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D76B112BBEFA430005A30D /* Chapter1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1UITests.swift; sourceTree = "<group>"; };
 		A1D76B132BBEFA430005A30D /* Chapter1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1F31A172BC3016B0038053F /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A1D76AF02BBEFA420005A30D /* AppDelegate.swift */,
 				A1D76AF22BBEFA420005A30D /* SceneDelegate.swift */,
 				A1D76AF42BBEFA420005A30D /* ViewController.swift */,
+				A1F31A172BC3016B0038053F /* NavigationBar.swift */,
 				A1D76AF62BBEFA420005A30D /* Main.storyboard */,
 				A1D76AF92BBEFA430005A30D /* Assets.xcassets */,
 				A1D76AFB2BBEFA430005A30D /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				A1D76AF52BBEFA420005A30D /* ViewController.swift in Sources */,
 				A1D76AF12BBEFA420005A30D /* AppDelegate.swift in Sources */,
 				A1D76AF32BBEFA420005A30D /* SceneDelegate.swift in Sources */,
+				A1F31A182BC3016B0038053F /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
