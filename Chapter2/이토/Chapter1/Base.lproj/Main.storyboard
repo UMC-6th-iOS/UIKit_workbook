@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chapter2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="쿠폰" translatesAutoresizingMaskIntoConstraints="NO" id="S59-kS-coM">
+                                <rect key="frame" x="20" y="206" width="353" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSv-dm-Pk0">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-Y8-qxE">
+                                        <rect key="frame" x="20" y="117" width="353" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="t4N-z8-3QP"/>
+                                        </connections>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="353" placeholderIntrinsicHeight="100" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-Rx-AP0">
+                                <rect key="frame" x="20" y="293" width="353" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="알뜰배달" translatesAutoresizingMaskIntoConstraints="NO" id="nQ5-Go-Xff">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="100"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="배달" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-EP-3F3">
+                                        <rect key="frame" x="126" y="0.0" width="101" height="100"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스토어" translatesAutoresizingMaskIntoConstraints="NO" id="3oy-eG-gkx">
+                                        <rect key="frame" x="252" y="0.0" width="101" height="100"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <tabBar contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GJt-5B-WQi">
+                                <rect key="frame" x="0.0" y="778" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem selectedImage="magnifyingglass" catalog="system" id="pFj-wL-oiY"/>
+                                    <tabBarItem title="Item" selectedImage="heart.fill" catalog="system" id="WOn-tW-3tQ"/>
+                                    <tabBarItem title="Item" selectedImage="list.clipboard" catalog="system" id="R6S-bG-xXS"/>
+                                    <tabBarItem selectedImage="person.2.circle" catalog="system" id="EGK-fo-P36"/>
+                                </items>
+                            </tabBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="대용량" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-Ov-BvL">
+                                <rect key="frame" x="20" y="412" width="353" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="광고" translatesAutoresizingMaskIntoConstraints="NO" id="Rsn-QQ-DvX">
+                                <rect key="frame" x="20" y="617" width="353" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="coupon" destination="S59-kS-coM" id="mpb-6F-5HS"/>
+                        <outlet property="couponView" destination="S59-kS-coM" id="H3N-cX-ffY"/>
+                        <outlet property="searchBar" destination="GL0-Y8-qxE" id="a4F-I2-Mni"/>
+                        <outlet property="tabBar" destination="GJt-5B-WQi" id="XI0-CW-qst"/>
+                        <outlet property="tabHeart" destination="WOn-tW-3tQ" id="B6F-tp-vcY"/>
+                        <outlet property="tabMy" destination="EGK-fo-P36" id="3uS-8a-Th7"/>
+                        <outlet property="tabRecepit" destination="R6S-bG-xXS" id="vsp-6W-ei2"/>
+                        <outlet property="tabSearch" destination="pFj-wL-oiY" id="dYZ-me-XxT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="list.clipboard" catalog="system" width="98" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.2.circle" catalog="system" width="128" height="123"/>
+        <image name="광고" width="620" height="204"/>
+        <image name="대용량" width="624" height="377"/>
+        <image name="배달" width="100" height="100"/>
+        <image name="스토어" width="100" height="100"/>
+        <image name="알뜰배달" width="100" height="100"/>
+        <image name="쿠폰" width="629" height="125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
