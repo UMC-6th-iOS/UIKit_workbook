@@ -25,29 +25,44 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         makeData()
         let nib:UINib = UINib(nibName: "CarrotTableViewCell", bundle: nil)
-        
+        let scrollNib:UINib = UINib(nibName: "ScrollableTableViewCell", bundle: nil)
+        settingTableView.register(scrollNib, forCellReuseIdentifier: "ScrollableTableViewCell")
         settingTableView.register(nib, forCellReuseIdentifier: "CarrotTableViewCell")
     }
 }
 
 extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingModel.count
+        return settingModel.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CarrotTableViewCell", for: indexPath)
-        as! CarrotTableViewCell
-        cell.imageViewName.image = UIImage(named: settingModel[indexPath.row].image)
-        cell.title.text = settingModel[indexPath.row].name
-        cell.location.text = settingModel[indexPath.row].location
-        cell.price.text = settingModel[indexPath.row].price
+        if indexPath.row < settingModel.count{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CarrotTableViewCell", for: indexPath)
+            as! CarrotTableViewCell
+            cell.imageViewName.image = UIImage(named: settingModel[indexPath.row].image)
+            cell.title.text = settingModel[indexPath.row].name
+            cell.location.text = settingModel[indexPath.row].location
+            cell.price.text = settingModel[indexPath.row].price
+            
+            return cell
+        }
         
-        return cell
+        
+        if indexPath.row == settingModel.count{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScrollableTableViewCell", for: indexPath)
+            return cell
+        }
+        return UITableViewCell.init()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        if indexPath.row == settingModel.count{
+//            return 150
+//        }
+//        return 150
+//    }
+    
+   
     
 }

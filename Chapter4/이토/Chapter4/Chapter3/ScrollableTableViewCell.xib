@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ScrollableTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScrollableTableViewCell" rowHeight="207" id="KGk-i7-Jjw" customClass="ScrollableTableViewCell" customModule="Chapter4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="534" height="207"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="534" height="207"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpU-NX-yrj">
+                        <rect key="frame" x="0.0" y="0.0" width="534" height="44"/>
+                        <items>
+                            <navigationItem title="시원한 여름 간식의 계절" id="EmC-GZ-oZh"/>
+                        </items>
+                    </navigationBar>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d57-vR-Tq9">
+                        <rect key="frame" x="0.0" y="44" width="534" height="163"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRr-vf-P4Y">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="163"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lx-Eb-2y1">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="163"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="500" id="AKj-HM-Vg7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="fgU-FI-hfe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3lx-Eb-2y1" firstAttribute="top" secondItem="1jh-44-zlT" secondAttribute="top" id="DsV-ic-2dP"/>
+                            <constraint firstItem="dRr-vf-P4Y" firstAttribute="height" secondItem="PFG-l9-esb" secondAttribute="height" id="Lvg-6g-Srf"/>
+                            <constraint firstItem="dRr-vf-P4Y" firstAttribute="top" secondItem="1jh-44-zlT" secondAttribute="top" id="RV1-wg-P9y"/>
+                            <constraint firstItem="dRr-vf-P4Y" firstAttribute="trailing" secondItem="1jh-44-zlT" secondAttribute="trailing" constant="500" id="bH2-DC-kA0"/>
+                            <constraint firstItem="3lx-Eb-2y1" firstAttribute="leading" secondItem="1jh-44-zlT" secondAttribute="leading" id="g8M-AW-oU4"/>
+                            <constraint firstItem="3lx-Eb-2y1" firstAttribute="height" secondItem="PFG-l9-esb" secondAttribute="height" id="hB0-qX-btm"/>
+                            <constraint firstItem="1jh-44-zlT" firstAttribute="bottom" secondItem="3lx-Eb-2y1" secondAttribute="bottom" id="hKh-eG-L9K"/>
+                            <constraint firstItem="dRr-vf-P4Y" firstAttribute="leading" secondItem="1jh-44-zlT" secondAttribute="leading" id="r7Q-pZ-XPX"/>
+                            <constraint firstItem="dRr-vf-P4Y" firstAttribute="bottom" secondItem="1jh-44-zlT" secondAttribute="bottom" id="yYl-Yy-nyU"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="1jh-44-zlT"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="PFG-l9-esb"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OpU-NX-yrj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Azf-yz-pOJ"/>
+                    <constraint firstAttribute="trailing" secondItem="OpU-NX-yrj" secondAttribute="trailing" id="CGM-h2-bKd"/>
+                    <constraint firstItem="d57-vR-Tq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vgg-It-qGi"/>
+                    <constraint firstItem="OpU-NX-yrj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bzA-nL-M0u"/>
+                    <constraint firstAttribute="bottom" secondItem="d57-vR-Tq9" secondAttribute="bottom" id="iZa-a3-hvn"/>
+                    <constraint firstAttribute="trailing" secondItem="d57-vR-Tq9" secondAttribute="trailing" id="wmM-Zw-1ih"/>
+                    <constraint firstItem="d57-vR-Tq9" firstAttribute="top" secondItem="OpU-NX-yrj" secondAttribute="bottom" id="zPy-CD-bWx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="stackView" destination="dRr-vf-P4Y" id="Z3H-ib-Q7q"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="98"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
