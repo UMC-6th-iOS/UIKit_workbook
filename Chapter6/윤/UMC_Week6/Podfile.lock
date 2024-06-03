@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Pastel (0.6.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Pastel
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Pastel
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
+
+PODFILE CHECKSUM: 03f6df4ec6b5b83d6d09a5a7cba2eee5891b7b8b
+
+COCOAPODS: 1.15.2

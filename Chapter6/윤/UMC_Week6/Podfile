@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'UMC_Week6' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for UMC_Week6
+  pod "Pastel"
+  pod 'Alamofire', '~> 4.7'
+
+  target 'UMC_Week6Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'UMC_Week6UITests' do
+    # Pods for testing
+  end
+
+end
