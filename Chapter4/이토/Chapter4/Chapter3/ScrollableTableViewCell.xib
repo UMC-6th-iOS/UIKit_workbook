@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,29 +26,16 @@
                         <rect key="frame" x="0.0" y="44" width="534" height="163"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRr-vf-P4Y">
-                                <rect key="frame" x="0.0" y="0.0" width="500" height="163"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lx-Eb-2y1">
-                                        <rect key="frame" x="0.0" y="0.0" width="500" height="163"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="500" id="AKj-HM-Vg7"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                                <rect key="frame" x="0.0" y="0.0" width="2000" height="163"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="fgU-FI-hfe"/>
+                                    <constraint firstAttribute="width" constant="2000" id="DJg-v8-Dgi"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="3lx-Eb-2y1" firstAttribute="top" secondItem="1jh-44-zlT" secondAttribute="top" id="DsV-ic-2dP"/>
+                            <constraint firstItem="dRr-vf-P4Y" firstAttribute="width" secondItem="1jh-44-zlT" secondAttribute="width" id="79v-km-bwb"/>
                             <constraint firstItem="dRr-vf-P4Y" firstAttribute="height" secondItem="PFG-l9-esb" secondAttribute="height" id="Lvg-6g-Srf"/>
                             <constraint firstItem="dRr-vf-P4Y" firstAttribute="top" secondItem="1jh-44-zlT" secondAttribute="top" id="RV1-wg-P9y"/>
-                            <constraint firstItem="dRr-vf-P4Y" firstAttribute="trailing" secondItem="1jh-44-zlT" secondAttribute="trailing" constant="500" id="bH2-DC-kA0"/>
-                            <constraint firstItem="3lx-Eb-2y1" firstAttribute="leading" secondItem="1jh-44-zlT" secondAttribute="leading" id="g8M-AW-oU4"/>
-                            <constraint firstItem="3lx-Eb-2y1" firstAttribute="height" secondItem="PFG-l9-esb" secondAttribute="height" id="hB0-qX-btm"/>
-                            <constraint firstItem="1jh-44-zlT" firstAttribute="bottom" secondItem="3lx-Eb-2y1" secondAttribute="bottom" id="hKh-eG-L9K"/>
                             <constraint firstItem="dRr-vf-P4Y" firstAttribute="leading" secondItem="1jh-44-zlT" secondAttribute="leading" id="r7Q-pZ-XPX"/>
                             <constraint firstItem="dRr-vf-P4Y" firstAttribute="bottom" secondItem="1jh-44-zlT" secondAttribute="bottom" id="yYl-Yy-nyU"/>
                         </constraints>
@@ -69,14 +55,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="navi" destination="OpU-NX-yrj" id="bCM-j0-AuV"/>
                 <outlet property="stackView" destination="dRr-vf-P4Y" id="Z3H-ib-Q7q"/>
             </connections>
             <point key="canvasLocation" x="305" y="98"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

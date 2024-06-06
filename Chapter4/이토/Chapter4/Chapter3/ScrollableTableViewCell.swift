@@ -8,16 +8,16 @@
 import UIKit
 
 class ScrollableTableViewCell: UITableViewCell {
-    let imageNames = ["이미지1", "이미지2", "이미지3", "이미지4", "이미지5", "이미지6", "이미지7", "이미지8", "이미지9", "이미지10"]
+    let imageNames = ["이미지11", "이미지2", "이미지3", "이미지4", "이미지5", "이미지6", "이미지7", "이미지8", "이미지9", "이미지10"]
 
     @IBOutlet weak var stackView: UIStackView!
     
+    @IBOutlet weak var navi: UINavigationBar!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        stackView.axis = .horizontal
-//        
         
+        stackView.axis = .horizontal
         stackView.spacing = 0
         stackView.alignment = .leading
         
@@ -27,6 +27,7 @@ class ScrollableTableViewCell: UITableViewCell {
             imageView.contentMode = .scaleAspectFit
             stackView.addArrangedSubview(imageView)
         }
+        navi.standardAppearance.titlePositionAdjustment = UIOffset(horizontal: -(stackView.frame.width/2),vertical: 0)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     var settingModel = [CarrotData]()
     
+    
     @IBOutlet weak var settingTableView: UITableView!
     
     func makeData(){
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
         settingTableView.delegate = self
         settingTableView.dataSource = self
         super.viewDidLoad()
