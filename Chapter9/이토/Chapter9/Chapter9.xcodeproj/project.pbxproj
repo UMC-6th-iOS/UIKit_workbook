@@ -14,6 +14,9 @@
 		A13A849E2C122F7B0044F082 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A13A849D2C122F7B0044F082 /* Base */; };
 		A13A84A02C122F7C0044F082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13A849F2C122F7C0044F082 /* Assets.xcassets */; };
 		A13A84A32C122F7C0044F082 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A13A84A22C122F7C0044F082 /* Base */; };
+		A179D9BD2C12FCBD0060395B /* CoronaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179D9BB2C12FCBD0060395B /* CoronaViewController.swift */; };
+		A179D9BE2C12FCBD0060395B /* CoronaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A179D9BC2C12FCBD0060395B /* CoronaViewController.xib */; };
+		A179D9C02C12FDFF0060395B /* CenterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179D9BF2C12FDFF0060395B /* CenterData.swift */; };
 		A1DE790B2C12372C0075498C /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE790A2C12372C0075498C /* data.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		A13A849F2C122F7C0044F082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A13A84A22C122F7C0044F082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A13A84A42C122F7C0044F082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A179D9BB2C12FCBD0060395B /* CoronaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaViewController.swift; sourceTree = "<group>"; };
+		A179D9BC2C12FCBD0060395B /* CoronaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoronaViewController.xib; sourceTree = "<group>"; };
+		A179D9BF2C12FDFF0060395B /* CenterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterData.swift; sourceTree = "<group>"; };
 		A1DE790A2C12372C0075498C /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		B8EA7133D67B65A9BE7EB36A /* Pods-Chapter9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapter9.debug.xcconfig"; path = "Target Support Files/Pods-Chapter9/Pods-Chapter9.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +91,9 @@
 				A13A84962C122F7B0044F082 /* AppDelegate.swift */,
 				A13A84982C122F7B0044F082 /* SceneDelegate.swift */,
 				A13A849A2C122F7B0044F082 /* ViewController.swift */,
+				A179D9BB2C12FCBD0060395B /* CoronaViewController.swift */,
+				A179D9BC2C12FCBD0060395B /* CoronaViewController.xib */,
+				A179D9BF2C12FDFF0060395B /* CenterData.swift */,
 				A1DE790A2C12372C0075498C /* data.swift */,
 				A13A849C2C122F7B0044F082 /* Main.storyboard */,
 				A13A849F2C122F7C0044F082 /* Assets.xcassets */,
@@ -156,6 +165,7 @@
 			files = (
 				A13A84A02C122F7C0044F082 /* Assets.xcassets in Resources */,
 				A13A84A32C122F7C0044F082 /* Base in Resources */,
+				A179D9BE2C12FCBD0060395B /* CoronaViewController.xib in Resources */,
 				A13A849E2C122F7B0044F082 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13A849B2C122F7B0044F082 /* ViewController.swift in Sources */,
+				A179D9BD2C12FCBD0060395B /* CoronaViewController.swift in Sources */,
 				A13A84972C122F7B0044F082 /* AppDelegate.swift in Sources */,
 				A13A84992C122F7B0044F082 /* SceneDelegate.swift in Sources */,
+				A179D9C02C12FDFF0060395B /* CenterData.swift in Sources */,
 				A1DE790B2C12372C0075498C /* data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +383,7 @@
 				INFOPLIST_FILE = Chapter9/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = CoronaViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -401,7 +413,7 @@
 				INFOPLIST_FILE = Chapter9/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = CoronaViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
