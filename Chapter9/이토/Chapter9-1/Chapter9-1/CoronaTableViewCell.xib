@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoronaTableViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="CoronaTableViewCell" customModule="Chapter9_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lss-85-mYE">
+                        <rect key="frame" x="20" y="30" width="32" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="centerName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwY-Ru-P8I">
+                        <rect key="frame" x="72" y="30" width="94" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lss-85-mYE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="4Bc-uH-2dV"/>
+                    <constraint firstAttribute="bottom" secondItem="OwY-Ru-P8I" secondAttribute="bottom" constant="30" id="Mt5-j1-9Rf"/>
+                    <constraint firstAttribute="bottom" secondItem="lss-85-mYE" secondAttribute="bottom" constant="30" id="Osj-z6-CYs"/>
+                    <constraint firstItem="lss-85-mYE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="n7q-TJ-RvX"/>
+                    <constraint firstItem="OwY-Ru-P8I" firstAttribute="leading" secondItem="lss-85-mYE" secondAttribute="trailing" constant="20" id="owJ-Vr-1uN"/>
+                    <constraint firstItem="OwY-Ru-P8I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="pow-cX-r5S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="centerName" destination="OwY-Ru-P8I" id="ziR-GF-uol"/>
+                <outlet property="sido" destination="lss-85-mYE" id="V8V-fK-lCP"/>
+            </connections>
+            <point key="canvasLocation" x="165.64885496183206" y="47.535211267605639"/>
+        </tableViewCell>
+    </objects>
+</document>

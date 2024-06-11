@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3167226C5DD5E701F300062D /* Pods_Chapter9_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDB519818E7607911D6F789 /* Pods_Chapter9_1.framework */; };
+		A13509C22C18AB990092225A /* CoronaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13509C02C18AB980092225A /* CoronaTableViewCell.swift */; };
+		A13509C32C18AB990092225A /* CoronaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13509C12C18AB980092225A /* CoronaTableViewCell.xib */; };
 		A1EBEDC82C18820100E8D623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBEDC72C18820100E8D623 /* AppDelegate.swift */; };
 		A1EBEDCA2C18820100E8D623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBEDC92C18820100E8D623 /* SceneDelegate.swift */; };
 		A1EBEDCC2C18820100E8D623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBEDCB2C18820100E8D623 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		81DB6887F80DD03FF2E9C6CC /* Pods-Chapter9-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapter9-1.debug.xcconfig"; path = "Target Support Files/Pods-Chapter9-1/Pods-Chapter9-1.debug.xcconfig"; sourceTree = "<group>"; };
+		A13509C02C18AB980092225A /* CoronaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaTableViewCell.swift; sourceTree = "<group>"; };
+		A13509C12C18AB980092225A /* CoronaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoronaTableViewCell.xib; sourceTree = "<group>"; };
 		A1EBEDC42C18820100E8D623 /* Chapter9-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter9-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EBEDC72C18820100E8D623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EBEDC92C18820100E8D623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				A1EBEDC72C18820100E8D623 /* AppDelegate.swift */,
 				A1EBEDC92C18820100E8D623 /* SceneDelegate.swift */,
 				A1EBEDCB2C18820100E8D623 /* ViewController.swift */,
+				A13509C02C18AB980092225A /* CoronaTableViewCell.swift */,
+				A13509C12C18AB980092225A /* CoronaTableViewCell.xib */,
 				A1EBEDDB2C188F9C00E8D623 /* Model.swift */,
 				A1EBEDCD2C18820100E8D623 /* Main.storyboard */,
 				A1EBEDD02C18820200E8D623 /* Assets.xcassets */,
@@ -155,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EBEDD12C18820200E8D623 /* Assets.xcassets in Resources */,
+				A13509C32C18AB990092225A /* CoronaTableViewCell.xib in Resources */,
 				A1EBEDD42C18820200E8D623 /* Base in Resources */,
 				A1EBEDCF2C18820100E8D623 /* Base in Resources */,
 			);
@@ -211,6 +218,7 @@
 			files = (
 				A1EBEDCC2C18820100E8D623 /* ViewController.swift in Sources */,
 				A1EBEDC82C18820100E8D623 /* AppDelegate.swift in Sources */,
+				A13509C22C18AB990092225A /* CoronaTableViewCell.swift in Sources */,
 				A1EBEDCA2C18820100E8D623 /* SceneDelegate.swift in Sources */,
 				A1EBEDDC2C188F9C00E8D623 /* Model.swift in Sources */,
 			);

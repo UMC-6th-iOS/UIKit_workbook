@@ -10,26 +10,29 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    //var centerData:ResponseData?
+    var centerData:ResponseData?
+
+    @IBOutlet weak var CoronaTableView: UITableView!
     
-    @IBOutlet weak var CenterName: UILabel!
     
     func fetchData(){
-        let url = "https://api.odcloud.kr/api/15077586/v1/centers?page=1&perPage=1"
+        let url = "https://api.odcloud.kr/api/15077586/v1/centers?page=1&perPage=10"
         
         let headers: HTTPHeaders = [
             "Authorization":  "Infuser +d+Gs/om/5gEldW5IGCcKcN955wrpOZRk3FPPHIdLFHX0LrQ0gU2vYdPzmjgplMbA8vIuBZVMATTlzNvABjizg=="
         ]
+        
         AF.request(url, headers: headers).responseData{
             response in
             switch response.result{
             case .success(let data):
                 do{
-                    let centerData = try JSONDecoder().decode(ResponseData.self, from: data)
-                    
+                    self.centerData = try JSONDecoder().decode(ResponseData.self, from: data)
                     DispatchQueue.main.async {
-                        self.CenterName.text = "\(centerData.data[0].centerName)"
-                    }
+                        self.CoronaTableView.reloadData()
+                                   }
+                    print("성공")
+                    print(self.centerData?.perPage)
                 }catch{
                     print(error)
                 }
@@ -43,10 +46,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         fetchData()
-        //CenterName.text = centerData?.data[0].centerName
+        CoronaTableView.delegate = self
+        CoronaTableView.dataSource = self
+                //CenterName.text = centerData?.data[0].centerName
+        
+        CoronaTableView.register(UINib(nibName: "CoronaTableViewCell", bundle: nil), forCellReuseIdentifier: "CoronaTableViewCell")
         
     }
 
 
 }
 
+extension ViewController:UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (centerData?.perPage ?? 1) - 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CoronaTableViewCell", for: indexPath) as! CoronaTableViewCell
+        
+        cell.sido.text = centerData?.data[indexPath.row].sido
+        cell.centerName.text = centerData?.data[indexPath.row].centerName
+        
+        return cell
+    }
+    
+    
+}
