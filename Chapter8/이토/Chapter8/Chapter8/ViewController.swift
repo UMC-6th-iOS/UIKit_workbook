@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
+        
         guard let id = idTextField.text, !id.isEmpty else {
             return print("아이디를 입력해주세요.")
         }
